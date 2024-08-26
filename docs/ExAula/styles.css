@@ -4,19 +4,69 @@
     box-sizing: border-box;
 }
 
+.backgroundImg{
+    background-image: url("images/imgFundo1.png");
+    background-repeat: repeat-x;
+}
+
+.whiteBackround{
+    background-image: url("images/imgFundo2.png");
+    background-repeat: repeat-x;
+}
+
 .mainHeader{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.6rem 9rem;
-    height: auto;
-    border-top: 3.5px solid rgb(23, 23, 101);
+    margin-top: 0.6rem;
 }
 
 .mainHeader > nav > ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 0.3rem;
+    column-gap: 0.3rem;
+}
+
+.principalMain{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9rem;
+}
+
+.articleMain{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0.9em;
+    justify-content: center;    
+    width: 76%;
+}
+
+.articleMain > ol{
+    padding-left: 2.5rem;
+}
+
+.mainFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem
+}
+
+.sectionForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    align-items: baseline;
+    justify-content: start;
+    width: 76%;
+}
+
+.footer{
+    font-weight: bold;
 }
