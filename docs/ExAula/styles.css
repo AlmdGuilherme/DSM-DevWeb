@@ -67,6 +67,13 @@
     width: 76%;
 }
 
+.txtArea{
+    max-width: 20rem;
+    min-width: 10.5rem;
+    min-height: 1.2rem;
+    max-height: 8rem;
+}
+
 .footer{
     font-weight: bold;
 }
