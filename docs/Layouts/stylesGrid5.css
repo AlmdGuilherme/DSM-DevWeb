@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: .3fr 2fr .3fr;
+    grid-template-rows: 3rem 33.5rem 3rem;
+    grid-template-areas: 
+    "head head head"
+    "lftA main rgtA"
+    "foot foot foot";
+    gap: 0.3rem;
+}
+
+.head{
+    grid-area: head;
+    border: 2px solid rgb(190, 85, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftA{
+    grid-area: lftA;
+    border: 1px dashed rgb(0, 255, 55);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.principal{
+    grid-area: main;
+    border: 2px solid rgb(55, 218, 255);
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.rightA{
+    grid-area: rgtA;
+    border: 1px dashed rgb(0, 255, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot{
+    grid-area: foot;
+    border: 2px solid rgb(190, 85, 97);
+    display: flex;
+    justify-content: center;
+}
